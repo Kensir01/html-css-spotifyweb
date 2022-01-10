@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* MAIN */
+
+main{
+    height: calc(100% - 80px);
+}
+
+main::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width: 200px;
+    min-height: 400px;
+    height: calc(100vh - 80px);
+    background-color: black;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.top{
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+}
+
+#logo{
+    margin: 20px 15px;
+    width: 70%;
+    height: 30px;
+    background-image: url('img/logo.svg');
+    background-repeat: no-repeat;
+}
+
+/* ASIDE1 */
+
+[class*="icons"]{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.icons2{
+    filter: invert(50%);
+}
+
+.box1icon2{
+    color: grey;
+    padding: 0px 15px;
+    margin: 10px 0px;
+}
+
+.box1icon1{
+    color: white;
+    border-left: 3px solid #a2ec2c;
+    line-height: 20px;
+    padding: 0px 12px;
+    margin-bottom: 10px;
+}
+
+.asidetext{
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* ASIDE2 */
+
+.aside2{
+    padding: 0px 15px;
+    color: gray;
+}
+
+.greybox{
+    color: black;
+    background-color: gray;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 3px;
+    margin: 5px 0px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.aside4 li, .textgrey{
+    color: gray;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 10px 0px;
+    width: 115px;
+    list-style: none;
+}
+
+.aside4{
+    padding: 0px 15px;
+    overflow-y: auto;
+}
+
+.aside2 li{
+    display: inline-block;
+}
+
+.asidetitle{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+
+/* ASIDE3 */
+
+.aside3{
+    background-color: black;
+    padding: 5px 15px;
+}
+
+#space1{
+    color: grey;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+[id*="space"]{
+    padding: 5px 0px;
+}
+
+#profile{
+    color: white;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url('img/profile.svg');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+}
+
+#biancobold{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* FINE SIDEBAR */
+
+.container{
+    float: left;
+    width: calc(100% - 200px);
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* BOTTON */
+
+.bottontop{
+    width: calc(100% - 200px);
+    position: fixed;
+    height: 70px;
+    top: 0;
+    right: 0;
+    background-color: #080b12;
+    z-index: 1;
+    text-align: right;
+    padding: 20px;
+}
+
+.botton{
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 3%;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.botton:hover{
+    transform: scale(1.2);
+}
+
+.bottontop .botton a:hover{
+    font-size: 14px;
+}
+
+.bottontop .botton a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* MUSICBOX */
+
+.musicbox{
+    padding: 90px 15px 40px 15px;
+    width: 100%;
+    background-color: #141922;
+}
+
+.musicbox li{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px 15px;
+    padding: 5px 0px;
+}
+
+.musicbox li a{
+    color: gray;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0px;
+}
+
+.musicbox li a.active::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: #94dd25;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.musicbox nav{
+    text-align: center;
+}
+
+.greenborder{
+    border-top: 3px solid #a2ec2c;
+    width: 50px;
+}
+
+#black{
+    color: black;
+}
+
+.boxalbum{
+    width: calc(100% / 6);
+    flex-shrink: 0;
+    padding: 10px 10px 10px 0px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxrel{
+    position: relative;
+}
+
+.cover1{
+    width: 100%;
+}
+
+.cover2{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.textalbum{
+    width: 100%;
+    text-align: center;
+}
+
+.play{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.0;
+    transition: all 0.5s;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play .far{
+    font-size: 60px;
+}
+
+.radius{
+    border-radius: 50%;
+}
+
+.list h2, .white{
+    font-size: 20px;
+    color: white;
+    margin-top: 35px;
+}
+
+.list h3{
+    margin-top: 10px;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+}
+
+.list h5, .grey{
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+
+/* FOOTER */
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
+    height: 80px;
+}
+
+.copertinaalbum{
+    width: 40px;
+    height: 40px;
+}
+
+#footeralbum{
+    width: 100%;
+}
+
+.footer1{
+    width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    margin-left: 15px;
+}
+
+.footer1 h5{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.footer1 h6{
+    color: gray;
+    font-size: 10px;
+}
+
+.fa-heart, .fa-folder{
+    color: gray;
+    font-size: 15px;
+    padding: 0px 4px;
+}
+
+
+.footer2{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    color: white;
+}
+
+[class*="footercenter"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 11px;
+}
+
+#cerchio{
+    padding: 3px 5px;
+    border-radius: 50%;
+    border: 2px solid white;
+    vertical-align: middle;
+}
+
+.footercenter2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.barra1{
+    width: 80%;
+}
+
+
+.footer3{
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 11px;
+    gap: 15px;
+    margin-right: 15px;
+}
+
+.fa-desktop{
+    margin: 0px 5px;
+}
+
+[class*="barra"]{
+    display: flex;
+}
+
+.barra2{
+    width: 50%;
+}
+
+.barrabianca1{
+    width: 30%;
+    height: 3px;
+    background-color: white;
+    position: relative;
+}
+
+.barragrigia1{
+    width: 90%;
+    height: 3px;
+    background-color: grey;
+}
+
+.fa-list-ul, .fa-desktop, .fa-volume-up{
+    padding: 0px 4px;
+}
+
+#circle{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    right: -5px;
+    top: -4px;
+    opacity: 0;
+}
+
+
+
+/* HOVER */
+.boxalbum:hover .play{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.aside4 li:hover, .aside2:hover .textgrey, .asidetext:hover, .musicbox li a:hover, #space1:hover{
+    color: white;
+}
+
+#space1:hover .icons2{
+    filter: invert(0%);
+}
+
+.aside2:hover .greybox{
+    background-color: white;
+}
+
+.fa-heart:hover, .fa-folder:hover{
+    color: white;
+}
+
+.barrabianca1:hover{
+    background-color: #a2ec2c;
+}
+
+.barrabianca1:hover #circle{
+    opacity: 1;
+}

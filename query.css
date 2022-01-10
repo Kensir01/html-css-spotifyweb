@@ -1,0 +1,190 @@
+/* MEDIA QUERY */
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+
+ /* MAIN */
+ .boxalbum{
+    width: calc(100% / 4);
+}
+}
+
+@media screen and (min-width: 760px) and (max-width: 1400px){
+
+ /* MAIN */
+
+ .boxalbum{
+    width: calc(100% / 4);
+}
+
+
+
+ /* FOOTER */
+
+    .footer1{
+        width: 25%;
+    }
+
+    .footer3{
+        width: 25%;
+    }
+
+    #line{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 755px){
+    .sidebar{
+        width: 50px;
+    }
+
+    .container{
+        width: calc(100% - 50px);
+    }
+
+    .bottontop{
+        width: calc(100% - 50px);
+    }
+
+    .none{
+        display: none;
+    }
+
+
+
+ /* ASIDE */
+
+    #logo{
+        width: 50px;
+        margin: 20px 0px;
+        background-image: url('img/logo-small.svg');
+        background-position: center;
+    }
+
+    #profile{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-size: 15px 15px;
+        background-position: center;
+    }
+
+    .icons2 {
+        width: 15px;
+        margin: auto;
+        margin-left: 3px;
+    }
+
+    hr{
+        display: none;
+    }
+
+
+
+ /* MAIN */
+
+    .boxalbum{
+        width: calc(100% / 2);
+    }
+
+    .list{
+        gap: 0px;
+    }
+
+    .list h3{
+        font-size: 12px;
+    }
+    
+    .list h5, .grey{
+        font-size: 7px;
+    }
+
+    .musicbox li{
+        font-size: 6px;
+        font-weight: 600;
+        margin: 0px 2px;
+        padding: 5px 0px;
+    }
+
+    .white{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+ /* BOTTON */
+
+ .botton{
+    font-size: 8px;
+}
+
+
+
+ /* FOOTER */
+
+    .footer1{
+        width: 25%;
+    }
+
+    .copertinaalbum{
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer3{
+        width: 20%;
+    }
+
+    [class*="footercenter"]{
+        gap: 5px;
+        font-size: 8px;
+    }
+
+    #line{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .barra1{
+        width: 40%;
+    }
+
+    .footercenter2{
+        justify-content: center;
+    }
+
+    .fa-list-ul, .fa-desktop, .fa-volume-up{
+        font-size: 5px;
+    }
+
+    #simboli{
+        display: flex;
+        width: 30%;
+    }
+
+    .barra2{
+        width: 70%;
+        margin-left: 10px;
+    }
+
+    .fa-desktop{
+        margin: 0px 0px;
+    }
+
+    .footer1 h5{
+        color: white;
+        font-size: 9px;
+        margin-bottom: 2px;
+    }
+    
+    .footer1 h6{
+        color: gray;
+        font-size: 6px;
+    }
+
+    .fa-heart, .fa-folder{
+        font-size: 10px;
+    }
+}
